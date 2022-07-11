@@ -1,10 +1,8 @@
-/**
- * @note This will be released as a separate module. Coming soon. 
 import { useState, useEffect } from "preact/hooks";
-import { motor } from "./index.ts";
+import { motor, MotorSpec } from "https://deno.land/x/motor@v1.0.2/mod.ts";
 
-export function useMotor<E extends Dict, G extends Dict>(
-  machine: MachineSpec<G, E>
+export function useMotor<E extends string, G extends string>(
+  machine: MotorSpec<G, E>
 ): {
   hook: (cylinder: (e: keyof E) => void) => void;
   gear: () => keyof G;
@@ -26,4 +24,3 @@ export function useMotor<E extends Dict, G extends Dict>(
     hook,
   };
 }
- */
