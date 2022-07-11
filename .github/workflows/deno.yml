@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 12.17.0
       - name: Change directory to npm
-        run: cd npm
+        run: cd ./npm
       - name: Install dependencies
         run: npm install
       - name: Release
