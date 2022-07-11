@@ -1,5 +1,5 @@
 import {} from "https://deno.land/std/testing/asserts.ts";
-import { MotorSpec } from "https://deno.land/x/motor@v1.0.2/mod.ts";
+import { MotorSpec } from "https://deno.land/x/motor@v1.0.3/mod.ts";
 
 type Gears = "stopped" | "paused" | "playing" | "loading";
 
