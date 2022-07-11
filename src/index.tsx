@@ -1,5 +1,5 @@
 import { useState, useEffect } from "preact/hooks";
-import { motor, MotorSpec } from "https://deno.land/x/motor@v1.0.5/mod.ts";
+import { motor, MotorSpec } from "https://deno.land/x/motor/mod.ts";
 
 export function useMotor<E extends string, G extends string>(
   machine: MotorSpec<G, E>

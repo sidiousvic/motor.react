@@ -34,12 +34,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.17.0
-      - name: Setup package.json
-        run: echo '{"main":"mod.ts","name":"@sidiousware/motor_react","version":"0.0.0","publishConfig":{"access":"public"},"scripts":{"semantic-release":"semantic-release --branches prod"},"repository":{"type":"git","url":"https://github.com/sidiousvic/motor_react.git"},"author":"sidiousvic","license":"MIT","bugs":{"url":"https://github.com/sidiousvic/motor_react/issues"},"homepage":"https://github.com/sidiousvic/motor_react","devDependencies":{"semantic-release":"^17.0.4"},"release":{"branches":["prod"]}}' > package.json
+      - name: Build for NPM (dnt)
+      - run: deno run -A build_npm.ts
       - name: Install dependencies
         run: npm install
       - name: Release
-        run: npx semantic-release
+        run: cd npm && npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
