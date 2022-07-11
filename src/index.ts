@@ -1,4 +1,4 @@
-import { useState, useEffect } from "preact/hooks";
+import { useState, useEffect } from "https://esm.sh/preact@10.8.1/hooks";
 import { motor, MotorSpec } from "https://deno.land/x/motor/mod.ts";
 
 export function useMotor<E extends string, G extends string>(
