@@ -12,6 +12,7 @@ await build({
     version: Deno.args[0],
     description: "Utilities for using Motor with React.",
     license: "MIT",
+    release: { branches: ["prod"] },
     repository: {
       type: "git",
       url: "git+https://github.com/sidiousvic/motor_react.git",
