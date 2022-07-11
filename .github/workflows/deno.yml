@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 12.17.0
       - name: Build for NPM (dnt)
-      - run: deno run -A build_npm.ts
+        run: deno run -A build_npm.ts
       - name: Install dependencies
         run: npm install
       - name: Release
