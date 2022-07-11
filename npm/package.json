@@ -5,6 +5,15 @@
   "name": "@sidiousware/motor_react",
   "description": "Utilities for using Motor with React.",
   "license": "MIT",
+  "scripts": {
+    "test": "node test_runner.js",
+    "semantic-release": "semantic-release --branches prod"
+  },
+  "release": {
+    "branches": [
+      "prod"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sidiousvic/motor_react.git"
@@ -18,9 +27,6 @@
       "require": "./script/mod.js",
       "types": "./types/mod.d.ts"
     }
-  },
-  "scripts": {
-    "test": "node test_runner.js"
   },
   "devDependencies": {
     "@types/node": "16.11.37",
