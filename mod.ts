@@ -1,1 +1,1 @@
-export { useMotor } from "./src/index.tsx";
+export { useMotor } from "./src/index.ts";
