@@ -34,12 +34,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.17.0
-      - name: Change directory to npm
-        run: cd ./npm
       - name: Install dependencies
-        run: npm install
+        run: cd npm && npm install
       - name: Release
-        run: npx semantic-release
+        run: cd npm && npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
