@@ -1,4 +1,4 @@
-# ⚙ Motor (React)
+# ⚙ Motor/React
 
 This package contains utilities for using Motor with React.
 
